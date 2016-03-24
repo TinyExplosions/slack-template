@@ -1,0 +1,45 @@
+{
+  "name": "fh-slackbot-template",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinyExplosions/slack-template.git"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.2",
+    "cors": "~2.2.0",
+    "express": "~4.0.0",
+    "fh-logger-helper": "~1.0.2",
+    "fh-mbaas-api": "5.7.12",
+    "jade": "~1.11.0",
+    "request": "~2.40.0",
+    "semi-static": "~1.1.2"
+  },
+  "devDependencies": {
+    "assert": "~1.3.0",
+    "blanket": "~1.2.3",
+    "chai": "~3.5.0",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-watch": "latest",
+    "grunt-env": "~0.4.1",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-node-inspector": "~0.1.5",
+    "grunt-nodemon": "0.2.0",
+    "grunt-open": "~0.2.3",
+    "grunt-shell": "~0.7.0",
+    "load-grunt-tasks": "~0.4.0",
+    "mocha": "~2.1.0",
+    "nock": "~7.5.0",
+    "supertest": "0.8.2",
+    "time-grunt": "~0.3.2",
+    "travis-cov": "~0.2.5"
+  },
+  "main": "application.js",
+  "scripts": {
+    "test": "grunt test",
+    "debug": "grunt serve",
+    "start": "node application.js"
+  },
+  "license": "MIT"
+}
