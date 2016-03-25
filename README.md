@@ -1,5 +1,9 @@
 #An RHMAP template app to give you a working Slack bot quickly.
 
+Provides the ability to run `/testbot echo some text` from Slack, and have
+it echoed back to you. THis shows the slack button functionality and how to 
+get commands into the RHMAP Studio.
+
 Clone the repo to a RHMAP service, and add the following Environment variables:
 
 SLACK_CLIENT_ID - the Client ID from your Slack App
