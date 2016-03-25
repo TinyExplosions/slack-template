@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/TinyExplosions/slack-template.svg?branch=master)](https://travis-ci.org/TinyExplosions/slack-template)
 #An RHMAP template app to give you a working Slack bot quickly.
 
 Provides the ability to run `/testbot echo some text` from Slack, and have
@@ -20,3 +19,5 @@ Configure a new Slack App from https://api.slack.com/
   set Redirect URI(s) to <service url>
 
 Then visit <service url> to install your app, and run `/testbot` in your Slack team.
+
+[![Build Status](https://travis-ci.org/TinyExplosions/slack-template.svg?branch=master)](https://travis-ci.org/TinyExplosions/slack-template)
