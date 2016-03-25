@@ -34,7 +34,7 @@ describe('Testing the Slackbot', function() {
             });
     });
 
-    it('should return "*echo hello*... echo hello... echo hello..."', function(done) {
+    it('should return "*hello*... hello... _hello_..."', function(done) {
         api.post('/slackbot')
             .set('Content-Type', 'application/json')
             .send({
@@ -52,7 +52,7 @@ describe('Testing the Slackbot', function() {
             .expect(200)
             .end(function(err, res) {
                 var body = res.body;
-                expect(body.text).to.equal("*echo hello*... echo hello... echo hello...");
+                expect(body.text).to.equal("*hello*... hello... _hello_...");
                 done();
             });
     });
@@ -75,7 +75,7 @@ describe('Testing the Slackbot', function() {
             .expect(200)
             .end(function(err, res) {
                 var body = res.body;
-                expect(body.text).to.equal("I'm a testbot from the RHMAP");
+                expect(body.text).to.equal("I'm a /testbot from the RHMAP");
                 done();
             });
     });
@@ -98,7 +98,7 @@ describe('Testing the Slackbot', function() {
             .expect(200)
             .end(function(err, res) {
                 var body = res.body;
-                expect(body.text).to.equal("I'm a testbot from the RHMAP");
+                expect(body.text).to.equal("I'm a /testbot from the RHMAP");
                 done();
             });
     });

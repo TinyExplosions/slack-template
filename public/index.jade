@@ -7,7 +7,9 @@ html
     link(rel='stylesheet', href='style.css')
   body
     .centered
-      - if (ok) {
+      - if (cancelled) {
+      h1 You've cancelled installation, try again later if you want.
+      - } else if (ok) {
       h1 You've installed the bot; Go to Slack and play!
       - } else if (ok === false) {
       h1 Something went wrong installing the bot, please try again.

@@ -81,4 +81,14 @@ describe('Installing Slack App', function() {
             });
     });
 
+    it('should return the install cancelled page', function(done) {
+        api.get('/?error=access_denied')
+            .expect(200)
+            .end(function(err, res) {
+                expect(res.text.indexOf("<h1>You've cancelled installation, try again later if you want.</h1>")).to.not.equal(-1)
+                expect(res.text.indexOf('access_denied')).to.not.equal(-1);
+                done();
+            });
+    });
+
 });
