@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/TinyExplosions/slack-template.svg?branch=master)](https://travis-ci.org/TinyExplosions/slack-template)
 #An RHMAP template app to give you a working Slack bot quickly.
 
 Provides the ability to run `/testbot echo some text` from Slack, and have
