@@ -57,6 +57,29 @@ describe('Testing the Slackbot', function() {
             });
     });
 
+    it('should return help attachments as command is not first word', function(done) {
+        api.post('/slackbot')
+            .set('Content-Type', 'application/json')
+            .send({
+                token: 'localdevelopment',
+                team_id: 'T0GV20483',
+                team_domain: 'tinyexplosions',
+                channel_id: 'C0GV0REJ1',
+                channel_name: 'general',
+                user_id: 'U0GUZGEMA',
+                user_name: 'al',
+                command: '/testbot',
+                text: 'hello echo',
+                response_url: 'https://hooks.slack.com/commands/T0GV20483/28877560885/Eehah8yGIVhUa15W67hYc2iM'
+            })
+            .expect(200)
+            .end(function(err, res) {
+                var body = res.body;
+                expect(body.text).to.equal("I'm a /testbot from the RHMAP");
+                done();
+            });
+    });
+
     it('should return help attachments', function(done) {
         api.post('/slackbot')
             .set('Content-Type', 'application/json')
