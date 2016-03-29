@@ -12,7 +12,7 @@
     "fh-logger-helper": "~1.0.2",
     "fh-mbaas-api": "5.7.12",
     "jade": "~1.11.0",
-    "request": "~2.40.0",
+    "request": "^2.69.0",
     "semi-static": "~1.1.2"
   },
   "devDependencies": {
