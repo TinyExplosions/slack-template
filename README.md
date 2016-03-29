@@ -21,4 +21,4 @@ Configure a new Slack App from https://api.slack.com/
 Then visit <service url> to install your app, and run `/testbot` in your Slack team.
 
 [![Build Status](https://travis-ci.org/TinyExplosions/slack-template.svg?branch=master)](https://travis-ci.org/TinyExplosions/slack-template)
-[![Dependency Status](https://david-dm.org/username/repo.svg?branch=master)](https://david-dm.org/TinyExplosions/slack-template)
+[![Dependency Status](https://david-dm.org/TinyExplosions/slack-template.svg?branch=master)](https://david-dm.org/TinyExplosions/slack-template)
